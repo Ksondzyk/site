@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "HelveticaNeueRegular";
+  src: url("../assets/fonts/HelveticaNeueLTStd-It.otf"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+* {
+  clear: both; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+li {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none; }
+
+.header-box {
+  max-width: 100%;
+  background-color: #3a2511; }
+
+.menu-box {
+  max-width: 96vw; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "HelveticaNeueRegular";
+  src: url("../assets/fonts/HelveticaNeueLTStd-It.otf"); }

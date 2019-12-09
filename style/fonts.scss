@@ -1,0 +1,13 @@
+// @font-face {
+//   font-family: Helvetica Neue LT Std; /* Имя шрифта */
+//   src: url("/fonts/HelveticaNeueLTStd-Cn.ttf") format("truetype"); /* Путь к файлу со шрифтом */
+// }
+
+// $sheetsHelvetica: Helvetica Neue LT Std;
+
+@font-face {
+  font-family: "HelveticaNeueRegular";
+  src: url("../assets/fonts/HelveticaNeueLTStd-It.otf");
+}
+
+$shets:HelveticaNeueRegular;
