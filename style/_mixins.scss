@@ -1,0 +1,18 @@
+@import "_color.scss";
+
+@mixin btn {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid $colorwhite;
+  display: block;
+  color: $colorwhite;
+  text-decoration: none;
+  @content;
+
+  &:hover {
+    @content;
+  }
+}
