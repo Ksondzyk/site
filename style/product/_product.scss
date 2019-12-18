@@ -1,0 +1,100 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+.product {
+  height: 8%;
+}
+.wrapper_flex {
+  display: flex;
+  width: 96%;
+  height: 89vh;
+  .box__left {
+    flex: 2;
+    background-color: $darkgray;
+    &_list {
+      display: flex;
+      list-style-type: none;
+      padding-left: 23px;
+      line-height: 40px;
+      &_elem {
+        &:nth-child(1)::after {
+          content: "/";
+          color: $font_product;
+          font-size: 1em;
+        }
+        &:nth-child(2)::after {
+          content: "/";
+          color: $font_product;
+          font-size: 1em;
+        }
+        &_text {
+          padding: 15px;
+          color: $font_product;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+  .box_center {
+    background-color: $light_gray;
+    flex: 2;
+  }
+  .box_right {
+    flex: 1;
+    &_flex {
+      display: block;
+      padding-left: 3em;
+      padding-right: 3em;
+      &_title {
+        text-align: center;
+        font-size: 1.6em;
+        line-height: 5em;
+        &_text {
+          color: $black;
+          font-size: 1.2em;
+          &:nth-child(3) {
+            color: $lightyellow;
+            padding-bottom: 2em;
+          }
+          &:nth-child(4) {
+            color: $darkgray;
+          }
+        }
+        &_picture {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .sizes {
+        padding-top: 0.8em;
+        &_text {
+          font-size: 1.2em;
+          color: $darkgray;
+        }
+        &_flex {
+          display: flex;
+          &_btn {
+            padding: 0.6em;
+            border: 0;
+            background-color: $colorwhite;
+            font-size: 2em;
+            &:nth-child(3) {
+              border-bottom: 2px solid $black;
+            }
+          }
+        }
+      }
+      .btn_box {
+        display: flex;
+      }
+    }
+  }
+}
