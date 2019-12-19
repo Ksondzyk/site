@@ -1,0 +1,75 @@
+@import "_color.scss";
+
+@mixin btn {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid $colorwhite;
+  display: block;
+  color: $colorwhite;
+  text-decoration: none;
+  @content;
+
+  &:hover {
+    @content;
+  }
+}
+
+@mixin layout_background($backgroundcolor) {
+  background-color: $backgroundcolor;
+  flex: 1;
+  display: flex;
+}
+
+@mixin buttons_backgraund_color($buttonsbackgroundcolor) {
+  background-color: $buttonsbackgroundcolor;
+}
+
+@mixin title_box {
+  font-size: 6em;
+  line-height: 76px;
+  color: $colorwhite;
+  margin: 0;
+}
+@mixin box_p {
+  font-size: 1.9em;
+  letter-spacing: 0.04em;
+  color: $colorwhite;
+  margin: 10px 0 35px 0;
+}
+@mixin btn_footer {
+  border: 0;
+  background-color: transparent;
+  font-size: 3.3em;
+}
+
+@mixin footer_wrapper-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+@mixin footer_about {
+  width: 90%;
+  height: 90%;
+}
+
+@mixin contakts_title {
+  font-size: 2.2em;
+}
+@mixin contakts_content {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+@mixin contakts_link {
+  padding: 1em 0;
+}
+
+@mixin contakts_text {
+  font-size: 1.4em;
+  color: $black;
+  @content;
+}
