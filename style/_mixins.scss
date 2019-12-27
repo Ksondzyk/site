@@ -73,3 +73,17 @@
   color: $black;
   @content;
 }
+
+@mixin box_bag {
+  width: 35%;
+  height: 4rem;
+  display: flex;
+  border-bottom: 2px solid $light_gray;
+  @content;
+}
+@mixin btn_bag_modal {
+  width: 100%;
+  height: 4em;
+  border: 3px solid #000f08;
+  font-size: 1.7em;
+}

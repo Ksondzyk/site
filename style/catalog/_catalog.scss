@@ -1,0 +1,115 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+
+.name {
+  background-color: $colorwhite;
+  .text_black {
+    color: $black;
+  }
+  .menu-box {
+    .logo {
+      &.header__logo {
+        color: black;
+      }
+    }
+  }
+}
+.header {
+  height: 100vh;
+  display: flex;
+  &__box {
+    margin-left: 5.5em;
+    flex: 18%;
+    &__navigation {
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-size: 1.5em;
+      }
+      &__list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: -18px;
+        &__elem {
+          padding: 3px 0;
+          &__item {
+            font-size: 14px;
+            color: $black;
+          }
+        }
+      }
+      .filters {
+        list-style-type: none;
+        padding-left: 0;
+        padding: 0.7em 0;
+        margin: 0;
+        &__title {
+          color: $darkgray;
+          line-height: 3em;
+          &__elem {
+            padding: 8px 0;
+            &__btn {
+              background-color: $colorwhite;
+              border: 0;
+              padding: 0;
+              cursor: pointer;
+              &__plus {
+                padding-right: 12px;
+              }
+            }
+          }
+          &__footer {
+            font-size: 14px;
+            line-height: 4em;
+            &_new {
+              padding-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex: 80%;
+    height: 80vh;
+    padding-right: 5.5em;
+    &__box {
+      flex: 37%;
+      background-color: $darkgray;
+      margin: 1.7em 2.9em;
+    }
+  }
+}
+.empty_box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_wrapper {
+    display: flex;
+    width: 68%;
+    height: 85%;
+    margin-left: 25.6em;
+    &__left {
+      flex: 1;
+      background-color: $darkgray;
+      margin-right: 30px;
+    }
+    &__right {
+      flex: 1;
+      background-color: $darkgray;
+      margin-left: 30px;
+    }
+  }
+}
