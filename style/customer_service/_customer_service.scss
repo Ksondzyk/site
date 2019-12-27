@@ -1,0 +1,98 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.Customer_Service {
+  padding: 0 2em 0 2em;
+  margin: 0;
+  width: 100%;
+  .left_list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    &_elem {
+      padding-left: 2em;
+      &:nth-child(1)::after {
+        content: "/";
+        color: $font_product;
+        font-size: 1em;
+      }
+      &_text {
+        padding-right: 2.2em;
+        color: $font_product;
+      }
+    }
+  }
+  .main_customer_service {
+    display: flex;
+    padding: 3em 7.5em 0 7.5em;
+    &_left {
+      flex: 1.5;
+      .title_color {
+        color: $font_product;
+      }
+      .element_height {
+        line-height: 2em;
+      }
+      .item_text {
+        font-size: 1.56em;
+      }
+    }
+    &_right {
+      flex: 3;
+      &_title {
+        font-size: 3.3em;
+        &_box {
+          &_title {
+            font-size: 1.8em;
+            color: $font_product;
+            border-bottom: 2px solid $font_product;
+            padding: 1.5em 0;
+            margin: 0;
+            &_box {
+              font-size: 1.8em;
+              color: $font_product;
+              border-bottom: 2px solid $font_product;
+              padding: 1.5em 0;
+              margin: 0;
+              &_btn {
+                display: flex;
+                background-color: $colorwhite;
+                border: 0;
+                font-size: 1.8rem;
+                &_image {
+                  padding-right: 1em;
+                }
+              }
+              &_text {
+                color: $black;
+                padding: 0 0.8em;
+              }
+            }
+          }
+          .border_none {
+            border: 0;
+          }
+          .box_text {
+            font-size: 1.5em;
+            border-bottom: 2px solid $font_product;
+            margin: 0;
+            padding-bottom: 1.5em;
+          }
+        }
+      }
+      .container_wrap {
+        padding: 5em 0 0 0;
+      }
+    }
+  }
+}
