@@ -1,0 +1,210 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+.product {
+  height: 8%;
+}
+.wrapper_flex {
+  display: flex;
+  width: 96%;
+  height: 89vh;
+  .box__left {
+    flex: 2;
+    background-color: $darkgray;
+    &_list {
+      display: flex;
+      list-style-type: none;
+      padding-left: 23px;
+      line-height: 40px;
+      &_elem {
+        &:nth-child(1)::after {
+          content: "/";
+          color: $font_product;
+          font-size: 1em;
+        }
+        &:nth-child(2)::after {
+          content: "/";
+          color: $font_product;
+          font-size: 1em;
+        }
+        &_text {
+          padding: 15px;
+          color: $font_product;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+  .box_center {
+    background-color: $light_gray;
+    flex: 2;
+  }
+  .box_right {
+    flex: 1;
+    &_flex {
+      display: block;
+      padding-left: 3em;
+      padding-right: 3em;
+      &_title {
+        text-align: center;
+        font-size: 1.6em;
+        line-height: 5em;
+        &_text {
+          color: $black;
+          font-size: 1.2em;
+          &:nth-child(3) {
+            color: $lightyellow;
+            padding-bottom: 2em;
+          }
+          &:nth-child(4) {
+            color: $darkgray;
+          }
+        }
+        &_picture {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .sizes {
+        padding-top: 0.8em;
+        &_text {
+          font-size: 1.2em;
+          color: $darkgray;
+        }
+        &_flex {
+          display: flex;
+          &_btn {
+            padding: 0.6em;
+            border: 0;
+            background-color: $colorwhite;
+            font-size: 2em;
+            cursor: pointer;
+            &:nth-child(3) {
+              border-bottom: 2px solid $black;
+            }
+          }
+        }
+      }
+      .btn_box {
+        display: flex;
+        padding-top: 2.5em;
+        &_add {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          height: 50px;
+          color: $colorwhite;
+          background-color: $black;
+          justify-content: center;
+          font-size: 20px;
+          border: 0;
+          margin: 4px 1px;
+        }
+        &_like {
+          display: flex;
+          flex-direction: column;
+          width: 20%;
+          height: 50px;
+          color: $colorwhite;
+          background-color: $black;
+          justify-content: center;
+          border: 0;
+          margin: 4px 1px;
+        }
+      }
+      .product_deskription {
+        display: flex;
+        padding-top: 10px;
+        &_btn {
+          border: 0;
+          background-color: $colorwhite;
+          &_text {
+            border: 2px solid black;
+            width: 12px;
+            cursor: pointer;
+          }
+        }
+        &_box {
+          padding-left: 12px;
+          &_title {
+            font-size: 1.3em;
+          }
+          &_text {
+            font-size: 1em;
+            color: $darkgray;
+          }
+        }
+        .btn_plus {
+          background: #2b2a29;
+          height: 12px;
+          width: 2px;
+          position: relative;
+          left: 4px;
+          &:after {
+            content: "";
+            height: 3.4px;
+            width: 12px;
+            background: #262424;
+            position: absolute;
+            left: -5px;
+            top: 3.1px;
+          }
+        }
+        .adside_title {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+.Complete {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+  &_flex {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    &_one {
+      flex: 1;
+      &_title {
+        font-size: 3em;
+        text-align: center;
+        width: 5em;
+        padding-top: 4em;
+      }
+    }
+    &_two {
+      flex: 2;
+      background-color: $darkgray;
+    }
+    &_three {
+      flex: 2;
+      background-color: $color_compile_look;
+    }
+  }
+}
+.box-arrivals {
+  .box_grey {
+    background-color: $darkgray;
+  }
+  .box_derk_yellow {
+    background-color: $derk_yellow;
+  }
+  .box_yellow {
+    background-color: $coloryellow;
+  }
+  .box_light_yellow {
+    background-color: #dfdfcb;
+  }
+}
